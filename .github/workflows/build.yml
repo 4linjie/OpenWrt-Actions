@@ -161,7 +161,7 @@ jobs:
         if: steps.organizer.outputs.status == 'success' && env.RELEASE == 'true' && !cancelled()
         uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
           name: ${{ env.RELEASE_NAME }}  ❤️ | ${{ matrix.target }}-OpenWrt 自动编译
           tag_name: ${{ env.RELEASE_TAG }}
