@@ -34,6 +34,7 @@ jobs:
           echo "UPLOAD=$UPLOAD" >> $GITHUB_ENV
           echo "RELEASE=$RELEASE" >> $GITHUB_ENV
           echo "WECHAT=$WECHAT" >> $GITHUB_ENV
+          echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
           echo "TZ=$TZ" >> $GITHUB_ENV
 
       - name: 初始化编译环境
